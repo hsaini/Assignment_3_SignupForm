@@ -1,0 +1,10 @@
+.form{
+    position: relative;
+    text-align: center;
+    
+}
+
+.form input{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+}

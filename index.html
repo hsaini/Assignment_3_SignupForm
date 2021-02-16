@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sign-up">
+        <h1>Sign Up</h1>
+
+        <form class="form" >
+            <div>Your username</div>
+            <input id="username" type="text" class="input-box" placeholder="mysupername690" required
+            pattern="" title="User name should contain only alphabets without space">
+
+            <div>Your email</div>
+            <input id="email" type="text" class="input-box" placeholder="mysupermail@gmail.com" required 
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Email should be validate for ‘@’ and ‘.’ ">
+
+            <div>Your password</div>
+            <input id="password" type="text" class="input-box" placeholder="eg. X8dfl90EO" required
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+
+            <div>Please confirm your password</div>
+            <input id="confpass" type="text" class="input-box" placeholder="mysupername690" required>
+
+            <div>
+                <br><input type="submit" class="Sign Up" value="Sign Up" onclick="signup(event)">
+            </div>
+
+            <p>Already a member? <input type="button" value="Go and Log in"> </p>
+
+        </form>
+    </div>
+    
+</body>
+</html>
